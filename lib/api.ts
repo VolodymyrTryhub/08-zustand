@@ -28,7 +28,6 @@ export const getNotes = async ({
       page,
       perPage: 12,
       search,
-
       ...(tag &&
         tag !== 'all' && {
           tag,

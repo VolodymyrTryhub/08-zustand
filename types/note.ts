@@ -1,4 +1,4 @@
-export type NoteTag = 'Todo' | 'Work' | 'Personal' | 'Meeting' | 'Health' | 'Important';
+export type NoteTag = string;
 
 export interface Category {
   id: string;
@@ -24,5 +24,5 @@ export interface Note {
 export interface CreateNoteData {
   title: string;
   content: string;
-  tag: NoteTag;
+  categoryId: string;
 }

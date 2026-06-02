@@ -6,7 +6,7 @@ import type { CreateNoteData } from '@/types/note';
 const initialDraft: CreateNoteData = {
   title: '',
   content: '',
-  tag: 'Todo',
+  categoryId: 'aa41e785-2f2f-4792-91ab-fda1d2d2733a',
 };
 
 interface NoteStore {
@@ -35,7 +35,6 @@ export const useNoteStore = create<NoteStore>()(
           draft: initialDraft,
         }),
     }),
-
     {
       name: 'note-draft-storage',
     }
